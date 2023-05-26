@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player Login</title>
+    <link rel="stylesheet" href="indexStyle.css">
+
+</head>
+<body>
+
+    <div class="center">
+        <h1>Login</h1>
+        <form action="#">
+            <div class="txtfield">
+                <label>Username</label>
+                <input type="text" id="uname"> <br>
+                <span></span>
+            </div>
+            <div class="txtfield">
+                <label>Password</label>
+                <input type="password" id="pass">
+                <span></span>
+            </div>
+            <div class="fpass">Forgot Password?</div>
+            <input type="button" id="submit" value="Submit">
+    
+            <div class="signup">
+                Not a member? <a href="#">Signup</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('submit').addEventListener("click", function(){
+            const un=document.getElementById('uname').value;      
+            const ps=document.getElementById('pass').value;  
+            if(un== "kartikginwal07@gmail.com" && ps== "unknown.1"){
+                window.location.replace("./home.html");
+            } else{
+               alert("Invalid Credentials!!");
+            }  
+            alert("Clicking"); 
+        });
+    </script>
+</body>
+</html>
